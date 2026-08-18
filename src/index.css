@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-ivory: #F7F3ED;
+    --color-cream: #EFE8DE;
+    --color-beige: #DDD1C3;
+    --color-charcoal: #171614;
+    --color-softblack: #0E0E0D;
+    --color-taupe: #9A8D80;
+    --color-champagne: #C5A880;
+    --color-champagne-light: #E8DCCB;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #F7F3ED;
+    color: #171614;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Frosted Glass Design System */
+.frosted-glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.frosted-glass-dark {
+  background: rgba(23, 22, 20, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.frosted-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(23, 22, 20, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px -2px rgba(23, 22, 20, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.frosted-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(154, 141, 128, 0.3);
+  box-shadow: 0 12px 32px -4px rgba(23, 22, 20, 0.08);
+}
+
+.frosted-badge {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Custom Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3ED;
+}
+::-webkit-scrollbar-thumb {
+  background: #DDD1C3;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A8D80;
+}
+
+/* Subtle Shimmer & Animations */
+@keyframes subtle-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: subtle-shimmer 2.5s infinite;
+}
+
+/* Smooth Image Loading */
+.img-editorial {
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+/* Hide scrollbar for clean carousels while allowing scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

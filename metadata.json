@@ -1,0 +1,6 @@
+{
+  "name": "MK Aesthetics Studio",
+  "description": "Advanced Aesthetic Medicine, Skin, Hair, Laser, Injectables & Rejuvenation in Lahore, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
